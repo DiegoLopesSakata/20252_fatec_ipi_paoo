@@ -1,3 +1,46 @@
+function saudacoesFactory(saudacao, nome){
+    let a
+    return function(){
+        console.log(`${saudacao}, ${nome}`)
+    }
+}
+
+// let olaJoao = saudacaoFactory('Ola', 'Joao')
+// let tchauJoao = saudacoesFactory('Tchau', 'Joao')
+// olaJoao()
+// tchauJoao()
+
+// function ola(){
+//     let nome = 'João'
+//     return function(){
+//         console.log(`Ola, ${nome}`)
+//     }
+// }
+// let olaResult = ola()
+// olaResult()
+
+//closures
+// let umaFuncao = function (){
+//     console.log('Fui armazenada em  uma variavel')
+// }
+// // umaFuncao()
+
+// function f(funcao){
+//     funcao()
+// }
+// // f(umaFuncao)
+
+// function g(){
+//     function outraFuncao(){
+//         console.log('Fui criada por g')
+//     }
+//     return  outraFuncao
+// }
+
+// f(g())
+// g()()
+// const gResult = g()
+
 //vetores, parte 2
 // const valores = [1, 2, 3, 4]
 // const soma = valores.reduce((ac, v) => ac + v)
